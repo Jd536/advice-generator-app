@@ -1,0 +1,14 @@
+*,
+*::after,
+*::before{
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body{
+  background-color:hsl(218, 23%, 16%) ;
+  font-family: 'Manrope', sans-serif;
+}

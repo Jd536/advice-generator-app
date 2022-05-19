@@ -1,0 +1,108 @@
+@import "../scss/mixins";
+@import "../scss/variables";
+
+.card{
+  background-color: $color-dark-grayish-blue;
+  color: $color-light-cyan;
+  width: 55rem;
+  min-height: 35rem;
+  height:auto;
+  border-radius: 2rem;
+  position: relative;
+  padding: 3rem;
+ 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+  @include responsive(phone) {
+    width: 90%;
+    padding: 1rem;
+  }
+
+   &__heading {
+     text-align: center;
+     color: $color-neon-green;
+     text-transform: uppercase;
+     font-size: 1.4rem;
+     letter-spacing: .3rem;
+
+     @include responsive(phone) {
+      // width: 100%;
+      font-family: 1rem;
+      letter-spacing: 2px;
+      
+    }
+   }
+
+  &__text{
+
+    font-size: 2.8rem;
+    text-align: center;
+  // &-quote {
+  //   color: $color-neon-green;
+  // }
+
+  @include responsive(phone) {
+    font-size: 1.4rem;
+    
+  }
+  }
+
+}
+
+.desktop__divider{
+  // align-self: flex-end;
+  margin-bottom: 4rem;
+
+  @include responsive(phone) {
+    display: none;
+    
+  }
+}
+
+
+.mobile__divider{
+  display: none;
+ 
+  @include responsive(phone) {
+    display: block;
+    margin-bottom:  4rem;
+    
+  }
+}
+
+
+
+
+.dice__container{
+  cursor: pointer;
+  position: absolute;
+  display: inline-block;
+  width: 5.5rem;
+  height: 5.5rem;
+  background-color: $color-neon-green;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: calc(100% - 2.75rem);
+  left: 24rem;
+  transition: all .2s ease;
+
+
+  &:hover{
+    -webkit-box-shadow: -.2rem 0 2rem 1.5rem rgba($color-neon-green,.4);
+-moz-box-shadow:-.2rem 0 2rem 1.5rem rgba($color-neon-green,.4);
+box-shadow:-.2rem 0 2rem 1.5rem rgba($color-neon-green,.4);
+  }
+
+  &:active {
+    scale: 1.5;
+    background-color: darken($color: $color-neon-green, $amount: 10);
+    -webkit-box-shadow: -.2rem 0 2rem 1.5rem rgba($color-neon-green,.4);
+    -moz-box-shadow:-.2rem 0 2rem 1.5rem rgba($color-neon-green,.4);
+    box-shadow:-.2rem 0 2rem 1.5rem rgba($color-neon-green,.4);
+  }
+}
