@@ -105,4 +105,8 @@ box-shadow:-.2rem 0 2rem 1.5rem rgba($color-neon-green,.4);
     -moz-box-shadow:-.2rem 0 2rem 1.5rem rgba($color-neon-green,.4);
     box-shadow:-.2rem 0 2rem 1.5rem rgba($color-neon-green,.4);
   }
+
+  @include responsive(phone){
+    left: 42%;
+  }
 }

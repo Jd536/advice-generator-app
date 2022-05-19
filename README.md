@@ -4,7 +4,8 @@ This is a solution to the [Advice generator app challenge on Frontend Mentor](ht
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](https://i.postimg.cc/4dwNvvJK/advice-generator-app-desktop-view.png)
+![](https://i.postimg.cc/kX2X8tL4/advice-generator-app-mobile-view-png.png)
 
 
 
@@ -21,4 +22,4 @@ This is a solution to the [Advice generator app challenge on Frontend Mentor](ht
 ## Author
 
 - Website - [Jimmy D.](https://github.com/Jd536/)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/Jd536)
+- Frontend Mentor - [@Jd536](https://www.frontendmentor.io/profile/Jd536)
