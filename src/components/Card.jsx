@@ -28,9 +28,9 @@ const Card = ( ) => {
   if(Object.keys(advice).length === 0){
     return(
       <div className="card">
-      <div className="card__content">
+      <main className="card__content">
           <Spin />
-      </div>
+      </main>
 
       <DesktopDivider className="desktop__divider"/>
       <MobileDivider className="mobile__divider" />
@@ -44,7 +44,7 @@ const Card = ( ) => {
   }
   return(
     <div className="card">
-      <div className="card__content">
+      <main className="card__content">
         <TransitionGroup>
           <Fade collapse bottom>
             <h1 className="card__heading">Advice #{advice.slip.id}</h1>
@@ -53,7 +53,7 @@ const Card = ( ) => {
         </TransitionGroup>
 
       
-      </div>
+      </main>
 
       <DesktopDivider className="desktop__divider"/>
       <MobileDivider className="mobile__divider" />
